@@ -5,7 +5,7 @@ function onButtonClick() {
     const modal = document.createElement('div');
     modal.className = 'modal'
     modal.innerText = 'Элемент создан'
-    let modalTimeout = setTimeout(function () {
+    setTimeout(function () {
         modal.style.display = "none";
     }, 5000);
     let buttonClose = document.createElement('button')
