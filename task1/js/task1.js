@@ -8,6 +8,12 @@ function onButtonClick() {
     let modalTimeout = setTimeout(function () {
         modal.style.display = "none";
     }, 5000);
+    let buttonClose = document.createElement('button')
+    buttonClose.innerText = 'Закрыть'
+    buttonClose.onclick = function () {
+        modal.style.display = "none";
+    }
+    modal.append(buttonClose)
     container.append(modal)
     console.log(modal)
 }
